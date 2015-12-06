@@ -1,0 +1,9 @@
+<h5 class="center align">Professores</h5>
+<div class="row">
+	<div class="container">
+		<% @professors.each do |prof| %>
+			<%= prof.name %>
+		<%end%>
+		<%= link_to "novo", new_professor_path %>
+	</div>
+</div>

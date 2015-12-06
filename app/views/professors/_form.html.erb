@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="container">
+		<%= simple_form_for @professor, url: professors_path do |prof|%>
+			<%= prof.label :Nome %>
+			<%= prof.text_field :name %>
+			<%= prof.input :avatar, as: :file %>
+			<%= prof.button :submit %>
+		<% end %>
+	</div>
+</div>
+

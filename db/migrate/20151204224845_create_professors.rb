@@ -2,15 +2,14 @@
   def change
     create_table :professors do |t|
       t.string :name
-      t.string :cargo
+      t.string :role
       t.string :area
       t.string :topics
-      t.string :role
+      t.string :acting
       t.string :formation
       t.string :email
-      t.string :telefone
-      t.string :sala
-      t.string :image
+      t.string :telephone
+      t.string :room 
 
       t.timestamps null: false
     end
