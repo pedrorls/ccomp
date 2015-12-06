@@ -18,6 +18,11 @@
       <li><a href="#">Alunos</a></li>
     </ul>
 
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#">Grade Curricular</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+
 	<body>
 
 		<header>
@@ -34,15 +39,14 @@
 
 		          <ul class="center hide-on-med-and-down">           
 		           <li><%= link_to "Home", root_path %></li>
-		           <li><a href="#">Grade Curricular</a></li>
+		           <li><a class="dropdown-button" href="#" data-activates="dropdown2">Curso<i class="material-icons right">arrow_drop_down</i></a></li>
 		           <li><a class="dropdown-button" href="#" data-activates="dropdown1">Institucional<i class="material-icons right">arrow_drop_down</i></a></li>
 		           <li><a href="#">Contatos</a></li>
 		         </ul>
 
 		          <ul class="side-nav" id="mobile-demo">            
 		           <li><a href="index.html">Home</a></li>
-		           <li><a href="#">Grade Curricular</a></li>
-		           <li><a href="#">Coordenação</a></li>
+		           <li><a href="#">Curso</a></li>
 		           <li><a href="professores.html">Professores</a></li>
 		           <li><a href="#">Alunos</a></li>
 		           <li><a href="#">Contatos</a></li>

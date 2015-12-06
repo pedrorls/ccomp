@@ -1,0 +1,17 @@
+ #HeadName {
+	font-family: roboto;
+	font-size: 1rem;
+	/*margin-right: 73px;*/
+}
+#logocurso {
+	width: auto;
+	height: auto;
+}
+#txtpresentation {
+	font-size: 20px;
+}
+#logouenf {
+	margin-top: 10px;
+	width: 150px;
+	height: auto;
+}	
