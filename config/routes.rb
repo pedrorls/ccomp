@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   match 'coordinator' => 'coordinators#index', via: 'get'
   resources :professors
+  resources :students 
   
 end

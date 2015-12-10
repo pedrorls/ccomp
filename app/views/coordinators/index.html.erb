@@ -2,7 +2,7 @@
 <div class="row">
 	<div class="container">
 		<% @coordinators.each do |coord| %>
-			<div class ="row">
+			<div class ="card row">
 				<div class ="col s3 responsive-img hide-on-med-and-down">
 				<%= image_tag(coord.avatar.url(:medium), :class => "foto") %>
 				</div>
