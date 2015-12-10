@@ -13,9 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
-//= require jquery
+//= require custom	
 //= require materialize-sprockets
 //= require materialize/extras/nouislider
-//= require custom
+//= require_self
+
+
         

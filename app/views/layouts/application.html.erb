@@ -2,93 +2,23 @@
 <html>
 
 	<head>
-	  <title>UENF - Ciência da Computação</title>
-	  <!--Import Google Icon Font-->
-	  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	  <meta charset="utf-8">
-	  <%= csrf_meta_tags %>
+
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  	<meta charset="utf-8">
+	  	<title>UENF - Ciência da Computação</title>
+	  	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	  
+	  	<%= csrf_meta_tags %>
+	  	
 	</head>
-
-	<ul id="dropdown1" class="dropdown-content">
-      <li><a href="#">Coordenação</a></li>
-      <li><%= link_to "Professores",  professors_path %></li>
-      <li><a href="#">Alunos</a></li>
-    </ul>
-
-    <ul id="dropdown2" class="dropdown-content">
-      <li><a href="#">Grade Curricular</a></li>
-      <li><a href="#"></a></li>
-    </ul>
 
 	<body>
 
-		<header>
-		    <nav class="#64b5f6 blue lighten-2">
-
-		       <div class="nav-wrapper">
-
-		         <a href="http://www.cc.uenf.br" id="HeadName" class="brand-logo right">Ciência da Computação</a>
-		         <a href="http://www.uenf.br/portal/index.php/br/" class="brand-logo center"> 
-		         <img alt="Rails" id="logouenf" class="responsive-img hide-on-med-and-down" src="/assets/LogoUENF2.png"/>
-		         </a>
-
-		         <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>  
-
-		          <ul class="center hide-on-med-and-down">           
-		           <li><%= link_to "Home", root_path %></li>
-		           <li><a class="dropdown-button" href="#" data-activates="dropdown2">Curso<i class="material-icons right">arrow_drop_down</i></a></li>
-		           <li><a class="dropdown-button" href="#" data-activates="dropdown1">Institucional<i class="material-icons right">arrow_drop_down</i></a></li>
-		           <li><a href="#">Contatos</a></li>
-		         </ul>
-
-		          <ul class="side-nav" id="mobile-demo">            
-		           <li><a href="index.html">Home</a></li>
-		           <li><a href="#">Curso</a></li>
-		           <li><a href="professores.html">Professores</a></li>
-		           <li><a href="#">Alunos</a></li>
-		           <li><a href="#">Contatos</a></li>
-		         </ul>
-
-		       </div>
-		    </nav>
-	    </header>
-
-	<%= yield %>
+	    <%= render 'layouts/header' %>
+		<%= yield %>
+	    <%= render 'layouts/footer' %>
 
 	</body>
-
-	<footer class="page-footer #64b5f6 blue lighten-2">
-    
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-           <h5 class="white-text">Mais informações</h5>
-           <p class="grey-text text-lighten-4">
-           Av. Alberto Lamego, 2000 - Parque Califórnia<br>
-           Prédio P5, Sala 119<br>
-           Campos dos Goytacazes - RJ<br>
-           CEP: 28013-602 </p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="coordenação">Coordenação</a></li>
-            <li><a class="grey-text text-lighten-3" href="http://www.uenf.br">UENF</a></li>
-            <li><a class="grey-text text-lighten-3" href="http://lcmat.uenf.br">LCMAT</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>        
-    <div class="footer-copyright">
-      <div class="container">
-        <div class="left">© 2015 UENF, Todos os direitos reservados</div>
-        <div class="right">Created by Ciência da Computação</div>
-      </div>
-
-    </div>
-  </footer>
 
 </html>

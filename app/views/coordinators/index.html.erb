@@ -1,0 +1,29 @@
+<h5 class="title center-align">Coordenação</h5>
+<div class="row">
+	<div class="container">
+		<% @coordinators.each do |coord| %>
+			<div class ="row">
+				<div class ="col s3 responsive-img hide-on-med-and-down">
+				<%= image_tag(coord.avatar.url(:medium), :class => "foto") %>
+				</div>
+					<div class="divider"></div>
+					<div class=" info row">
+						<strong class="nome">Nome:</strong>
+						<%= coord.name %><br>
+						<strong class="nome">Email:</strong>
+						<%= coord.email %><br>
+						<strong class="nome">Telefone:</strong>
+						<%= coord.telephone %><br>
+						<strong class="nome">Sala:</strong>
+						<%= coord.room %><br>
+						<strong class ="nome">Início:</strong>
+						<%= coord.year_start %>
+						<strong class ="nome">Fim:</strong>
+						<%= coord.year_end %> 
+						<div class="divider"></div>
+					</div>
+			</div>
+
+		<%end%>
+	</div>
+</div>

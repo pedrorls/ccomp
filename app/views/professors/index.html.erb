@@ -1,31 +1,33 @@
-<h5 class="center align">Professores</h5>
+<h5 class="title center-align">Professores</h5>
 <div class="row">
 	<div class="container">
 		<% @professors.each do |prof| %>
-			<div class ="row">
-				<div class ="col s4 responsive-img hide-on-med-and-down">
-				<%= image_tag(prof.avatar.url(:medium)) %>
+			<div class ="card row"><br>
+				<div class ="col s3 responsive-img hide-on-med-and-down">
+				<%= image_tag(prof.avatar.url(:medium), :class => "foto") %>
 				</div>
-				<div class="divider"></div>
-				<strong class="nome">Nome:</strong>
-				<%= prof.name %><br>
-				<strong class="nome">Cargo:</strong>
-				<%= prof.role %><br>
-				<strong class="nome">Área:</strong>
-				<%= prof.area %><br>
-				<strong class="nome">Tópicos:</strong>
-				<%= prof.topics %><br>
-				<strong class="nome">Atuação:</strong>
-				<%= prof.acting %><br>
-				<strong class="nome">Formação:</strong>
-				<%= prof.formation %><br>
-				<strong class="nome">Email:</strong>
-				<%= prof.email %><br>
-				<strong class="nome">Telefone:</strong>
-				<%= prof.telephone %><br>
-				<strong class="nome">Sala:</strong>
-				<%= prof.room %><br>
-				<div class="divider"></div>
+					<div class="divider"></div>
+					<div class="info row">
+						<strong class="nome">Nome:</strong>
+						<%= prof.name %><br>
+						<strong class="nome">Cargo:</strong>
+						<%= prof.role %><br>
+						<strong class="nome">Área:</strong>
+						<%= prof.area %><br>
+						<strong class="nome">Tópicos:</strong>
+						<%= prof.topics %><br>
+						<strong class="nome">Atuação:</strong>
+						<%= prof.acting %><br>
+						<strong class="nome">Formação:</strong>
+						<%= prof.formation %><br>
+						<strong class="nome">Email:</strong>
+						<%= prof.email %><br>
+						<strong class="nome">Telefone:</strong>
+						<%= prof.telephone %><br>
+						<strong class="nome">Sala:</strong>
+						<%= prof.room %><br>
+						<div class="divider"></div>
+					</div>
 			</div>
 
 		<%end%>
