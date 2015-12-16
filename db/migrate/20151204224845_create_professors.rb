@@ -1,5 +1,6 @@
   class CreateProfessors < ActiveRecord::Migration
-  def change
+
+  def self.up
     create_table :professors do |t|
       t.string :name
       t.string :role
@@ -9,9 +10,15 @@
       t.string :formation
       t.string :email
       t.string :telephone
-      t.string :room 
+      t.string :room
+      t.boolean :coordinator 
 
       t.timestamps null: false
     end
+
+    def self.down
+      drop_table :professors
+    end
+    
   end
 end

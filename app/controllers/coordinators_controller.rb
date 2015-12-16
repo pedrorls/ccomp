@@ -1,5 +1,5 @@
 class CoordinatorsController < ApplicationController
 	def index
-		@coordinators = Coordinator.all 
+		@professors = Professor.all
 	end 
 end
