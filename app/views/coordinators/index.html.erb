@@ -3,23 +3,22 @@
 	<div class="container">
 		<% @professors.each do |prof| %>
 			<% if prof.coordinator == true %>
-				<div class ="card row"><br>
-					<div class ="col s3 responsive-img hide-on-med-and-down">
-					<%= image_tag(prof.avatar.url(:medium), :class => "foto") %>
+				<div class ="row">
+					<div class ="center col s12 l3">
+					<%= image_tag(prof.avatar.url(:thumb), :class => "foto") %>
 					</div>
-						<div class="divider"></div>
-						<div class=" info row">
-							<strong class="nome">Nome:</strong>
-							<%= prof.name %><br>
-							<strong class="nome">Email:</strong>
-							<%= prof.email %><br>
-							<strong class="nome">Telefone:</strong>
-							<%= prof.telephone %><br>
-							<strong class="nome">Sala:</strong>
-							<%= prof.room %><br>
-							<div class="divider"></div>
-						</div>
+					<div class="col s12 l9">
+						<strong class="nome">Nome:</strong>
+						<%= prof.name %><br>
+						<strong class="nome">Email:</strong>
+						<%= prof.email %><br>
+						<strong class="nome">Telefone:</strong>
+						<%= prof.telephone %><br>
+						<strong class="nome">Sala:</strong>
+						<%= prof.room %><br>
+					</div>
 				</div>
+			<div class="divider"></div><br>
 			<%end%>
 		<%end%>
 	</div>

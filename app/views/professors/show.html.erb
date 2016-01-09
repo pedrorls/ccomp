@@ -1,1 +1,19 @@
-<h1>Profile Professores</h1>
+<div class="row">
+	<div class="container">
+			<div class ="card row"><br>
+				<div class ="col s12 l3">
+					<div class="center-align">
+					<%= image_tag(@professor.avatar.url(:medium), :class => "foto") %><br>
+					<%= image_tag("facebook-icon.png", :class => "social") %>
+					<%= image_tag("linkedin-icon.jpg", :class => "social") %>
+					<%= image_tag("Lattes.png", :class => "social") %>
+					</div>
+				</div>
+
+				<div class="col s12 l9 center">
+					<h5><%= @professor.name %></h5>
+					<div class="divider"></div>
+				</div>
+			</div>
+	</div>
+</div>
