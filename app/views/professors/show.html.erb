@@ -10,9 +10,11 @@
 					</div>
 				</div>
 
-				<div class="col s12 l9 center">
-					<h5><%= @professor.name %></h5>
+				<div class="col s12 l9">
+					<h5 class="center"><%= @professor.name %></h5>
 					<div class="divider"></div>
+					<p>Sobre<br><%= @professor.bio %></p>
+					<p>Bolsistas<br><%= @professor.student.name %></p>
 				</div>
 			</div>
 	</div>

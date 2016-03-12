@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151206000640) do
+ActiveRecord::Schema.define(version: 20160310222257) do
 
   create_table "professors", force: :cascade do |t|
     t.string   "name"
@@ -30,6 +30,16 @@ ActiveRecord::Schema.define(version: 20151206000640) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.text     "bio"
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string   "name"
+    t.string   "course"
+    t.string   "research"
+    t.integer  "professor_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end
