@@ -57,6 +57,7 @@ gem "mini_magick"
 gem "paperclip", "~> 4.3"
 gem 'rspec', '~> 3.4'
 gem 'rubocop', require: false
-gem 'rails_admin', '~> 0.8.1'
+gem 'rails_admin'
 gem 'devise'
+gem 'cancan'
 gem 'google-analytics-rails', '1.1.0'
