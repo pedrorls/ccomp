@@ -1,4 +1,10 @@
-<h5 title center-align>Bolsistas</h5>
-<% @students.each do |student| %>
-	<%= student.name %>
-<% end %>
+<h5 class="title center-align">Bolsistas</h5>
+<div class="row">
+	<div class="container">
+		<% @students.each do |student| %>
+			<div class ="row">
+				<%= student.name %>
+			</div>
+		<% end %>
+	</div>
+</div>

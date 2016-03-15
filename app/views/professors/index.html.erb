@@ -4,9 +4,10 @@
 		<% @professors.each do |prof| %>
 			<div class ="row">
 				<div class ="center col s12 l3">
-				<%= image_tag(prof.avatar.url(:thumb), :class => "foto") %>
+				<%= image_tag(prof.avatar.url(:medium), :class => "foto circle responsive-img") %>
 				</div>
 				<div class="col s12 l9">
+					<br>
 					<strong class="nome">Nome:</strong>
 					<%= prof.name %><br>
 					<strong class="nome">Cargo:</strong>

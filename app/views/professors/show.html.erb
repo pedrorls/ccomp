@@ -1,20 +1,59 @@
 <div class="row">
 	<div class="container">
-			<div class ="card row"><br>
-				<div class ="col s12 l3">
-					<div class="center-align">
-					<%= image_tag(@professor.avatar.url(:medium), :class => "foto") %><br>
+		<br>
+		<div class ="card row"><br>
+			<div class ="col s12 l3">
+				<div class="center-align">
+					<%= image_tag(@professor.avatar.url(:medium), :class => "foto circle responsive-img") %><br>
 					<%= image_tag("facebook-icon.png", :class => "social") %>
 					<%= image_tag("linkedin-icon.jpg", :class => "social") %>
 					<%= image_tag("Lattes.png", :class => "social") %>
-					</div>
-				</div>
-
-				<div class="col s12 l9">
-					<h5 class="center"><%= @professor.name %></h5>
-					<div class="divider"></div>
-					<p>Sobre<br><%= @professor.bio %></p>
+					<p><b>Sobre</b></p>
+					<p><i><%= @professor.bio %></i></p>
 				</div>
 			</div>
+
+			<div class="col s12 l9">
+				<h5 class="center"><%= @professor.name %></h5>
+				<div class="divider"></div>
+
+				<table class="striped responsive-table">
+					<tbody>
+						<tr>
+							<td><b>Função</b></td>
+							<td><%= @professor.role %></td>
+						</tr>
+						<tr>
+							<td><b>Área</b></td>
+							<td><%= @professor.area %></td>
+						</tr>
+						<tr>
+							<td><b>Tópicos</b></td>
+							<td><%= @professor.topics %></td>
+						</tr>
+						<tr>
+							<td><b>Atuação</b></td>
+							<td><%= @professor.acting %></td>
+						</tr>
+						<tr>
+							<td><b>Formação</b></td>
+							<td><%= @professor.formation %></td>
+						</tr>
+						<tr>
+							<td><b>Email</b></td>
+							<td><%= @professor.email %></td>
+						</tr>
+						<tr>
+							<td><b>Telefone</b></td>
+							<td><%= @professor.telephone %></td>
+						</tr>
+						<tr>
+							<td><b>Sala</b></td>
+							<td><%= @professor.room %></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
 </div>
