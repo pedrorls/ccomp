@@ -3,7 +3,9 @@
 	<div class="container">
 		<% @students.each do |student| %>
 			<div class ="row">
-				<%= student.name %>
+				<%= student.name %><br>
+				<%= student.course %><br>
+				<%= student.research %>
 			</div>
 		<% end %>
 	</div>
