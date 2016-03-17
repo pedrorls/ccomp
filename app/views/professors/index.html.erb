@@ -4,17 +4,17 @@
 		<% @professors.each do |prof| %>
 			<div class ="row">
 				<div class ="center col s12 l3">
-				<%= image_tag(prof.avatar.url(:medium), :class => "foto circle responsive-img") %>
+				<%= image_tag(prof.avatar.url(:medium), :class => "foto responsive-img") %>
 				</div>
 				<div class="col s12 l9">
 					<br>
-					<strong class="nome">Nome:</strong>
+					<b>Nome:</b>
 					<%= prof.name %><br>
-					<strong class="nome">Cargo:</strong>
+					<b>Cargo:</b>
 					<%= prof.role %><br>
-					<strong class="nome">Área:</strong>
-					<%= prof.area %><br>
-					<%= link_to "Mais Info", prof, method: :get %>
+					<b>Área:</b>
+					<%= prof.area %>
+					<p><%= link_to "+", prof, method: :get, :class => "btn blue" %></p>
 				</div>
 			</div>
 		<div class="divider"></div><br>

@@ -5,8 +5,8 @@
 .foto {
 	max-width: 250px;
 	max-height: 200px;
-	width: 150px;
-	height: 150px;
+	width: auto;
+	height: auto;
 }
 
 .title{

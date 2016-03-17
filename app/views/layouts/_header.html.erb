@@ -1,47 +1,48 @@
-		<header>
-		
-		    <nav class="blue lighten-2">
+		<header>		
+			<nav class="blue lighten-2">
 
-		       <div class="nav-wrapper">
+				<div class="nav-wrapper">
 
-				<ul id="dropdown1" class="dropdown-content">
-				  <li><%= link_to "Professores",  professors_path, method: :get	%></li>
-				  <li><%= link_to "Bolsistas", students_path, method: :get %></li>
-			      <li><a href="#">Ex-alunos</a></li>
-			      <li><a href="#">Técnicos</a></li>
-		    	</ul>
+					<ul id="dropdown1" class="dropdown-content">
+						<li><%= link_to "Professores",  professors_path, method: :get	%></li>
+						<li><%= link_to "Bolsistas", students_path, method: :get %></li>
+						<li><a href="#">Ex-alunos</a></li>
+						<li><a href="#">Técnicos</a></li>
+					</ul>
 
-				<ul id="dropdown2" class="dropdown-content">				  
-				  <li><%= link_to "Grade Curricular", subjects_path, method: :get %></li>
-				  <li><%= link_to "Coordenação", coordinator_path, method: :get %></li>
-				</ul>
+					<ul id="dropdown2" class="dropdown-content">				  
+						<li><%= link_to "Grade Curricular", subjects_path, method: :get %></li>
+						<li><%= link_to "Coordenação", coordinator_path, method: :get %></li>
+					</ul>
 
-		         
-		         <a href="http://www.uenf.br/portal/index.php/br/" class="left"> 
-		        
-		         <%= image_tag("LogoUENF2.png", :class => "responsive-img hide-on-med-and-down logouenf")%>
-		         </a>
-		         <a href="http://www.cc.uenf.br" id="HeadName" class="brand-logo center">Ciência da Computação</a>
 
-		         <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>  
+					<a href="http://www.uenf.br/portal/index.php/br/" class="left">		        
+						<%= image_tag("LogoUENF2.png", :class => "responsive-img hide-on-med-and-down logouenf")%>
+					</a>
 
-		          <ul class="right 	hide-on-med-and-down">           
-		           <li><%= link_to "Home", root_path, method: :get %></li>
-		           <li><a class="dropdown-button" href="#" data-activates="dropdown2">Curso<i class="material-icons right">arrow_drop_down</i></a></li>
-		           <li><a class="dropdown-button" href="#" data-activates="dropdown1">Pessoas<i class="material-icons right">arrow_drop_down</i></a></li>
-		           <li><%= link_to "Contatos", contato_path, method: :get %></li>
-		         </ul>
+					<%= link_to "Ciência da Computação", root_path, method: :get, :class => "brand-logo center", :id => "headname" %>
 
-		          <ul class="side-nav" id="mobile-demo">            
-		           <li><%= link_to "Home", root_path, method: :get %></li>
-		           <li><a href="#">Curso</a></li>
-		           <li><%= link_to "Professores", professors_path, method: :get %></li>
-		           <li><%= link_to "Bolsistas", students_path, method: :get %></li>
-		           <li><%= link_to 	"Contatos", contato_path, method: :get %></li>
-		         </ul>
+					<a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>  
 
-		       </div>
+					<ul class="right 	hide-on-med-and-down">           
+						<li><%= link_to "Home", root_path, method: :get %></li>
+						<li><a class="dropdown-button" href="#" data-activates="dropdown2">Curso<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a class="dropdown-button" href="#" data-activates="dropdown1">Pessoas<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><%= link_to "Contatos", contato_path, method: :get %></li>
+					</ul>
 
-		    </nav>
+					<ul class="side-nav" id="mobile-demo">            
+						<li><%= link_to "Home", root_path, method: :get %></li>
+						<li><a href="#">Curso</a></li>
+						<li><%= link_to "Professores", professors_path, method: :get %></li>
+						<li><%= link_to "Bolsistas", students_path, method: :get %></li>
+						<li><%= link_to "Grade Curricular", subjects_path, method: :get %></li>
+						<li><%= link_to "Coordenação", coordinator_path, method: :get %></li>
+						<li><%= link_to 	"Contatos", contato_path, method: :get %></li>
+					</ul>
 
-	    </header>
+				</div>
+
+			</nav>
+
+		</header>
