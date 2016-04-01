@@ -1,12 +1,19 @@
 <h5 class="title center-align">Bolsistas</h5>
 <div class="row">
 	<div class="container">
-		<% @students.each do |student| %>
-			<div class ="row">
-				<%= student.name %><br>
-				<%= student.course %><br>
-				<%= student.research %>
-			</div>
-		<% end %>
+		<div class ="row">
+		  <div class="square">
+			<table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Modalidade</th>
+						<th>Pesquisa</th>
+					</tr>
+				</thead>
+				<%= render 'tstudent' %>
+			</table>
+		  </div>
+		</div>		
 	</div>
 </div>

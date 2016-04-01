@@ -3,8 +3,10 @@
 	<div class="container">
 		<% @professors.each do |prof| %>
 			<% if prof.coordinator == true %>
+			  <div class="square">
 				<div class ="row">
 					<div class ="center col s12 l3">
+					<br>
 					<%= image_tag(prof.avatar.url(:medium), :class => "foto responsive-img") %>
 					</div>
 					<div class="col s12 l9">
@@ -19,6 +21,7 @@
 						<%= prof.room %><br>
 					</div>
 				</div>
+			  </div>
 			<div class="divider"></div><br>
 			<%end%>
 		<%end%>

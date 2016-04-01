@@ -5,8 +5,8 @@
 			<div class ="col s12 l3">
 				<div class="center-align">
 					<%= image_tag(@professor.avatar.url(:medium), :class => "foto responsive-img") %><br>
-					<%= image_tag("facebook-icon.png", :class => "social") %>
-					<%= image_tag("linkedin-icon.jpg", :class => "social") %>
+					<a href="https://<%= @professor.facebook %>"><i class="fa fa-facebook-square fa-2x"></i></a>
+					<a href="<%= @professor.linkedin %>"><i class="fa fa-linkedin-square fa-2x"></i></a>
 					<%= image_tag("Lattes.png", :class => "social") %>
 					<p><b>Sobre</b></p>
 					<p><i><%= @professor.bio %></i></p>
@@ -50,6 +50,14 @@
 						<tr>
 							<td><b>Sala</b></td>
 							<td><%= @professor.room %></td>
+						</tr>
+						<tr>
+							<td><b>Bolsistas</b></td>
+							<td>
+							<% @professor.student.each do |student| %>
+							  <%= student.name %><br>
+							<% end %>
+							</td>
 						</tr>
 					</tbody>
 				</table>

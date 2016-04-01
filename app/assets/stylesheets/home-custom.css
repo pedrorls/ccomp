@@ -8,10 +8,16 @@
 	height: auto;
 }
 #txtpresentation {
-	font-size: 20px;
+	font-size: 1.5em;
 }
 .logouenf {
 	margin-top: 10px;
 	width: 150px;
 	height: auto;
 }	
+
+.square{
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+}

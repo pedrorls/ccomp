@@ -52,6 +52,7 @@ group :production do
 end 
 
 gem 'materialize-sass'
+gem "font-awesome-rails"
 gem 'simple_form'
 gem "mini_magick"
 gem "paperclip", "~> 4.3"
