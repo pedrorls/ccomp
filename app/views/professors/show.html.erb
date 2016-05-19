@@ -7,7 +7,7 @@
 					<%= image_tag(@professor.avatar.url(:medium), :class => "foto responsive-img") %><br>
 					<a href="https://<%= @professor.facebook %>"><i class="fa fa-facebook-square fa-2x"></i></a>
 					<a href="<%= @professor.linkedin %>"><i class="fa fa-linkedin-square fa-2x"></i></a>
-					<%= image_tag("Lattes.png", :class => "social") %>
+					<a href="<%= @professor.lattes %>"><%= image_tag("lattes.png", :class => "social") %></a>
 					<p><b>Sobre</b></p>
 					<p><i><%= @professor.bio %></i></p>
 				</div>
