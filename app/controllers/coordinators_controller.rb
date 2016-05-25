@@ -1,5 +1,5 @@
 class CoordinatorsController < ApplicationController
 	def index
-		@professors = Professor.where(coordinator: true)
+		@coordinator = Professor.where(coordinator: true)
 	end 
 end

@@ -1,23 +1,23 @@
 <h5 class="title center-align">Coordenação</h5>
 <div class="row">
 	<div class="container">
-		<% @professors.each do |prof| %>
+		<% @coordinator.each do |item| %>
 			  <div class="square">
 				<div class ="row">
 					<div class ="center col s12 l3">
 					<br>
-					<%= image_tag(prof.avatar.url(:medium), :class => "foto responsive-img") %>
+					<%= image_tag(item.avatar.url(:medium), :class => "foto responsive-img") %>
 					</div>
 					<div class="col s12 l9">
 						<br>
 						<b class="nome">Nome:</b>
-						<%= prof.name %><br>
+						<%= item.name %><br>
 						<b class="nome">Email:</b>
-						<%= prof.email %><br>
+						<%= item.email %><br>
 						<b class="nome">Telefone:</b>
-						<%= prof.telephone %><br>
+						<%= item.telephone %><br>
 						<b class="nome">Sala:</b>
-						<%= prof.room %><br>
+						<%= item.room %><br>
 					</div>
 				</div>
 			  </div>
